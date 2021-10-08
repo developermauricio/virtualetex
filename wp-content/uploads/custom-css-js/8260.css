@@ -1,0 +1,269 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Añade aquí tu código CSS.
+
+Por ejemplo:
+.ejemplo {
+    color: red;
+}
+
+Para mejorar tu conocimiento sobre CSS knowledge echa un vistazo a http://www.w3schools.com/css/css_syntax.asp
+
+Fin del comentario */ 
+
+
+
+/*div.title-system-wall {
+    margin-bottom: 10px;
+}
+
+.line-separator-walls {
+    width: 40%;
+    background: #dcd9d9;
+}
+
+.fields-references-walls {
+    margin-bottom: 0;
+    z-index: 10;
+}
+.content-title-reference-walls {
+    display: flex;
+    justify-content: center;
+}
+.content-references-walls {
+    padding: 0 2rem;
+    text-align: center;
+}
+.title-references-walls {
+    color: #ed7d3e;
+    font-size: 1.2rem;
+    line-height: 0;
+}
+div.number-references-walls {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+  	cursor: pointer;
+}
+.separator-walls {
+    width: 2px;
+    background: #000;
+    height: 26px;
+    margin-top: -14px;
+}
+
+img.background-references-left {
+    position: absolute;
+    top: 0;
+    left: 11px;
+    width: 265px;
+}
+img.background-references-right {
+    right: 14px;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+*/
+
+
+.main-content-system {
+    background: transparent;
+    position: absolute;
+    top: 1.8rem;
+    z-index: 2;
+    width: 100%;
+}
+.content-img-logo-etex {
+    width: 300px;
+    margin-bottom: -52px;
+    padding-left: 1rem;
+}
+img.img-logo-etex {
+    height: 34px;
+}
+.fields-references-walls {
+    background: #00000021;
+    padding: 1rem 0;
+    color: white;
+    margin-bottom: 0;
+}
+.number-references-walls {
+    font-size: 1.2rem;
+    line-height: 12px;
+}
+div.content-references-walls:hover {
+    /*color: #ed7d3e;*/
+  	color: #000000;
+}
+div#wallReferenceGood051 {
+    /*color: #ed7d3e;*/
+  	color: #000000;
+}
+.content-title-reference-walls {
+    display: flex;
+    justify-content: end;
+  	padding-right: 1rem;
+}
+.content-references-walls {
+    padding: 0 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+div.name-reference-wall {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    min-width: 10% !important;
+    width: 230px;
+}
+div.name-reference-wall .title-subtitle {
+    margin-bottom: -10px;
+}
+div.name-reference-wall .liner-continer {
+    margin: -12px 0 0 0;
+}
+div.name-reference-wall .title-after_title {
+    line-height: 22px !important;
+}
+
+.main-content-system {
+    min-width: 1300px !important;
+}
+div.main-content-walls-references {
+    max-width: 1300px !important;
+}
+
+
+
+
+/***  Estilos para ocultar muros  ***/
+div#mainContentWallReference088 {
+  display: none;
+}
+div#mainContentWallReference077 {
+  display: none;
+}
+
+
+
+/***  Estilos tabs content info  ***/
+.main-content-tabs-walls {
+    margin-top: -73px !important;
+}
+.main-content-tabs-walls .vc_tta-tabs-container {
+    padding: 0 18rem;
+}
+.main-content-tabs-walls ul.vc_tta-tabs-list {
+    display: flex !important;
+    justify-content: center !important;
+  	background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+    background-repeat: no-repeat;
+    background-size: 42rem 100%;
+}
+.main-content-tabs-walls li.vc_tta-tab {
+    padding: 1rem 0 !important;
+  	width: 200px;
+}
+.main-content-tabs-walls li.vc_tta-tab.vc_active {
+    background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png);
+    background-size: 10.4rem 100%;
+    background-repeat: no-repeat;
+}
+
+.main-content-tabs-walls span.vc_tta-title-text {
+    color: white;
+}
+.main-content-tabs-walls span.vc_tta-title-text:after {
+    height: 0 !important;
+}
+.main-content-tabs-walls i.vc_tta-icon {
+    display: block !important;
+    margin-bottom: 25px;
+    padding-top: 8px;
+    color: white;
+    font-size: 2rem !important;
+}
+
+.main-content-tabs-walls .vc_tta-panels {
+    background: white !important;
+    border: none !important;
+}
+
+.content-document-especification .info-box-icon {
+    width: 50px;
+}
+
+
+
+/***  Estilos tabs de muros  ***/
+.main-slider-documents {
+    background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+    background-repeat: no-repeat;
+    background-size: 51rem 100%;
+    padding-left: 3rem;
+}
+div.item-content {
+    padding: 1rem 0;
+}
+div.item-content:hover {
+    background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png) !important;
+    padding: 1rem 0;
+    background-size: 16rem 100%;
+    background-repeat: no-repeat;
+}
+
+
+/**************************************
+	Estilos nuevos tabs
+***************************************/
+
+.tab-content-main {
+  display: flex;
+  justify-content: center;
+  margin-top: -2.6rem;
+}
+.tab-content-items {
+  display: flex;
+  background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+  background-repeat: no-repeat;
+  background-size: 47.5rem 100%;
+  padding-left: 0.1rem;
+}
+.tablinks {
+  width: 190px;
+  padding: 0.7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+/*.tablinks:hover {
+  background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 100%;
+}*/
+.tablinks.active {
+  background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 100%;
+}
+img.img-icon-tab {
+    width: 40px;
+    height: 40px;
+}
+span.text-item-tab {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}</style>
+<!-- end Simple Custom CSS and JS -->

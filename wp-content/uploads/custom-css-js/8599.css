@@ -1,0 +1,96 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Añade aquí tu código CSS.
+
+Por ejemplo:
+.ejemplo {
+    color: red;
+}
+
+Para mejorar tu conocimiento sobre CSS knowledge echa un vistazo a http://www.w3schools.com/css/css_syntax.asp
+
+Fin del comentario */ 
+
+/***  estilos navbar  ***/
+.whb-row.whb-general-header.whb-sticky-row.whb-without-bg.whb-without-border.whb-color-light.whb-flex-flex-middle {
+    background: #00000029;
+}
+
+
+
+
+/***  Estilos de login y registro  ***/
+a.btn.wd-switch-to-register {
+    background-color: #e95a38;
+    color: white;
+}
+div.registration-info {
+    text-align: justify;
+}
+div#spacing-login {
+  height: 6rem !important;
+  background: #21212145;
+}
+
+
+
+/**  Estilos página apartamento  **/
+div#content-apartamento {
+    margin-top: -40px;
+    margin-bottom: -73px;
+}
+.ipnrm-theme-light .ipnrm-tooltips .ipnrm-form {
+	padding: 0 !important;
+    /*background-color: #fff0 !important;*/
+}
+p.style-tooltip {
+    color: #ed6a4c;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/***  Estilos slider apartamento  ***/
+div.content-slider-info-box .owl-dots {
+    display: none;
+}
+
+
+.main-slider-info-fox {
+    background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+    background-size: 79rem 100%;
+    background-repeat: no-repeat;
+}
+
+.main-slider-info-fox .info-box-icon {
+    width: 50px;
+}
+.main-slider-info-fox .info-svg-wrapper.info-icon {
+    width: 50px !important;
+    height: 50px !important;
+}
+.main-slider-info-fox .box-icon-wrapper.box-with-icon.box-icon-simple {
+    margin-bottom: 0;
+}
+.main-slider-info-fox .owl-stage-outer {
+    padding: 0 !important;
+}
+.main-slider-info-fox div.item-info-box {
+    padding: 1.2rem 0;
+}
+.main-slider-info-fox div.item-info-box:hover {
+    background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png) !important;
+    padding: 1.2rem 0;
+    background-size: 16rem 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+@media (max-width: 767.98px) { 
+  div#spacing-login {
+    height: 4rem !important;
+  }
+}</style>
+<!-- end Simple Custom CSS and JS -->

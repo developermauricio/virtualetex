@@ -1,0 +1,201 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/*=============================================
+TABS DEL HOME
+=============================================*/
+.css-tabs-etex .vc_tta-tab>a{
+	border-color:#f9a12c !important;
+	background-color:#f9a12c !important
+}
+
+.css-tabs-etex .vc_tta-tabs-list{
+	/*background-color:#f9a12c;*/
+    padding-left: 3rem !important;
+	background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+	  background-size: 81rem 91%;
+    background-repeat: no-repeat;
+}
+.css-tabs-etex{
+	  margin-top: -5rem;
+    position: relative;
+}
+.css-tabs-etex .vc_tta-tabs-container{
+	padding-right: 0rem;
+  padding-left: 0rem;
+}
+.css-tabs-etex a{
+	background-image: linear-gradient(to bottom,rgba(255,255,255,.2) 0,rgba(255,255,255,.01) 0%) !important
+}
+.vc_tta.vc_tta-style-modern .vc_tta-tab>a {
+    border-width: 0px !important;
+    
+    background-repeat: repeat-x;
+}
+.css-tabs-etex.vc_tta.vc_general .vc_tta-tab>a {
+	/*padding: 30px 30px !important;*/
+	min-width: 245px;
+	padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+		border-color:transparent !important;
+	background-color:transparent !important;
+
+}
+
+.css-tabs-etex.vc_tta.vc_general .vc_tta-tab.vc_active>a{
+    /*min-width: 220px;*/
+	padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+		border-color:transparent !important;
+	background-color:transparent !important;
+
+}
+
+.css-tabs-etex .vc_tta-tab.vc_active>a{
+	    background-size: contain;
+	background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png) !important;
+	border-color:transparent !important;
+	background-color:transparent !important;
+	color: #ffffff !important;
+	padding: 3rem 4.15rem !important;
+    background-repeat: no-repeat !important;
+}
+.css-tabs-etex.vc_tta.vc_tta-spacing-1 .vc_tta-tab{
+  margin-left: -35px; !important;
+}
+
+span.vc_tta-title-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+ul.vc_tta-tabs-list {
+	display: flex !important;
+  justify-content: space-between !important;
+}
+
+.css-tabs-etex.vc_tta.vc_tta-spacing-1 .vc_tta-tabs-list{
+    padding: 0;
+    margin-top: -1px;
+    margin-bottom: 0;
+    margin-left: -30px !important;
+    margin-right: 0;
+}
+
+
+/***  Estilos tabs para muros  ***/
+div#content-tabs-muro-007 {
+    margin-top: 2rem !important;
+}
+div#content-tabs-muro-007 .vc_tta.vc_general .vc_tta-tab.vc_active>a {
+    /* min-width: 220px; */
+    padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+
+
+/*=============================================
+TABS DEL APARTAMENTO ESCANDINAVO
+=============================================*/
+.css-tabs-etex-apto-escandinavo .vc_tta-tab>a{
+	border-color:#f9a12c !important;
+	background-color:#f9a12c !important
+}
+
+.css-tabs-etex-apto-escandinavo .vc_tta-tabs-list{
+	/*background-color:#f9a12c;*/
+  	color: #ffffff !important;
+    padding-left: 2rem !important;
+	background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/banner@2x.png);
+	  background-size: 78rem 91%;
+    background-repeat: no-repeat;
+}
+.css-tabs-etex-apto-escandinavo{
+	margin-top: 0rem;
+    position: relative;
+}
+.css-tabs-etex-apto-escandinavo .vc_tta-tabs-container{
+	padding-right: 0rem;
+  padding-left: 0rem;
+}
+.css-tabs-etex-apto-escandinavo a{
+	background-image: linear-gradient(to bottom,rgba(255,255,255,.2) 0,rgba(255,255,255,.01) 0%) !important
+}
+.vc_tta.vc_tta-style-modern .vc_tta-tab>a {
+    border-width: 0px !important;
+    
+    background-repeat: repeat-x;
+}
+.css-tabs-etex-apto-escandinavo.vc_tta.vc_general .vc_tta-tab>a {
+	/*padding: 30px 30px !important;*/
+	min-width: 245px;
+    text-align: center !important;
+	padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+		border-color:transparent !important;
+	background-color:transparent !important;
+
+}
+
+.css-tabs-etex-apto-escandinavo.vc_tta.vc_general .vc_tta-tab.vc_active>a{
+    /*min-width: 220px;*/
+	padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+		border-color:transparent !important;
+	background-color:transparent !important;
+
+}
+
+.css-tabs-etex-apto-escandinavo .vc_tta-tab.vc_active>a{
+	    background-size: contain;
+	background-image: url(https://virtualetex.creategicalatina.com/wp-content/uploads/2021/09/Trazado-30@2x.png) !important;
+	border-color:transparent !important;
+	background-color:transparent !important;
+	color: #ffffff !important;
+	padding: 3rem 4.15rem !important;
+    background-repeat: no-repeat !important;
+}
+.css-tabs-etex-apto-escandinavo.vc_tta.vc_tta-spacing-1 .vc_tta-tab{
+  margin-left: -35px; !important;
+}
+
+span.vc_tta-title-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+ul.vc_tta-tabs-list {
+	display: flex !important;
+  justify-content: space-between !important;
+}
+
+.css-tabs-etex-apto-escandinavo.vc_tta.vc_tta-spacing-1 .vc_tta-tabs-list{
+    padding: 0;
+    margin-top: -1px;
+    margin-bottom: 0;
+    margin-left: -30px !important;
+    margin-right: 0;
+}
+.css-tabs-etex-apto-escandinavo span.vc_tta-title-text {
+    color: #ffffff !important;
+}
+
+/***  Estilos tabs para muros  ***/
+div#content-tabs-muro-007 {
+    margin-top: 2rem !important;
+}
+div#content-tabs-muro-007 .vc_tta.vc_general .vc_tta-tab.vc_active>a {
+    /* min-width: 220px; */
+    padding: 3rem 4.15rem 4rem !important;
+    background-repeat: no-repeat !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+
+.css-tabs-etex i.vc_tta-icon {
+    display: block !important;
+    margin-bottom: 21px;
+    font-size: 2rem !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
