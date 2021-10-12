@@ -4,16 +4,6 @@
 
 jQuery(document).ready(function( $ ){
     
-    const wallReferenceGood051 = jQuery('#wallReferenceGood051');
-    const wallReferenceBetter088 = jQuery('#wallReferenceBetter088');
-    const wallReferenceBest077 = jQuery('#wallReferenceBest077');
-
-    const wallGood051 = jQuery('#mainContentWallReference051');
-    const wallBetter088 = jQuery('#mainContentWallReference088');
-    const wallBest077 = jQuery('#mainContentWallReference077');
-  
-    
-    
 	const elementGoPasilloEntrada = jQuery('#pasilloEntrada'); 
 	const elementGoEntrada = jQuery('#entrada'); 
 	const elementGoSala = jQuery('#sala'); 
@@ -41,17 +31,12 @@ jQuery(document).ready(function( $ ){
     const itemEntrada = jQuery('.info-box-entrada'); 
     const itemSala = jQuery('.info-box-sala'); 
     const itemCocinaComedor = jQuery('.info-box-cocina-comedor'); 
-    const itemCuartoServicios = jQuery('.info-box-cuarto-servicios'); 
     const itemBanoSocial = jQuery('.info-box-bano-social'); 
-    const itemhabitacion1 = jQuery('.info-box-habitacion-1'); 
-    const itemhabitacion2 = jQuery('.info-box-habitacion-2'); 
     const itemHabitacionPrincipal = jQuery('.info-box-habitacion-principal'); 
 
 
      
-    //const urlMarker = "/wp-content/uploads/2021/08/icono-blanco.png"
-    const urlMarker = "/wp-content/uploads/2021/10/icon-map-view-blanco.png"    
-    //const urlActiveMarker = "/wp-content/uploads/2021/08/icono-naranja.png"
+    const urlMarker = "/wp-content/uploads/2021/10/icon-map-view-blanco.png"  
     const urlActiveMarker = "/wp-content/uploads/2021/10/icon-ubicacion-actual-color.png"
     const urlLocation = "https://backend-etex.creategicalatina.com/api/register-location";
     const urlWall = "https://backend-etex.creategicalatina.com/api/register-wall";
@@ -60,7 +45,8 @@ jQuery(document).ready(function( $ ){
     let markerActive = false;
     let idCurrentMarker = '';
 
-    // array con info de cada marcador, primero las escenas y luego los muros
+
+     
     const dataMarkers = [  // revisar la referencia del muro por defecto
         { nameMarker: "Ingresar", idMarker: "2F488BA48C", nameScene: "Entrada", idScene: "AB9E2B7BF7", wall: "", typeModel: ""  },
         { nameMarker: "M22", idMarker: "05EC7020D2", nameScene: "Entrada", idScene: "AB9E2B7BF7", wall: "M22", typeModel: "Good 100 Duc - Esc"  },
@@ -189,7 +175,8 @@ jQuery(document).ready(function( $ ){
         { nameMarker: "Ir a la habitación", idMarker: "44D73A8CBD", nameScene: "Balcón habitación principal", idScene: "F1C10E9B62", wall: "", typeModel: "" }
     ];
 
-    // array con los elementos marcadores del mapa
+
+     
     const elementMarkers = [
         { idScene: 'AB9E2B7BF7', nameScene: "Entrada", elemMap: elementGoPasilloEntrada },
         { idScene: '919521B462', nameScene: "Pasillo de entrada", elemMap: elementGoEntrada },
@@ -217,7 +204,7 @@ jQuery(document).ready(function( $ ){
     ];
 
 
-    
+     
     elementGoPasilloEntrada.on('click', () => { onSetScene( "AB9E2B7BF7", elementGoPasilloEntrada ); });
     elementGoEntrada.on('click', () => { onSetScene( "919521B462", elementGoEntrada ); });
     elementGoSala.on('click', () => { onSetScene( "2db264c2", elementGoSala ); });
@@ -240,16 +227,15 @@ jQuery(document).ready(function( $ ){
     elementGoHabitacionThreeBalcon.on('click', () => { onSetScene( "F1C10E9B62", elementGoHabitacionThreeBalcon ); });
 
 
-    
+     
     itemEntrada.on('click', () => { onSetScene( "AB9E2B7BF7", itemEntrada, false ); });
     itemSala.on('click', () => { onSetScene( "2db264c2", itemSala, false ); });
     itemCocinaComedor.on('click', () => { onSetScene( "271e0e62", itemCocinaComedor, false ); });
-    itemCuartoServicios.on('click', () => { onSetScene( "9CDD67E66C", itemCuartoServicios, false ); });
     itemBanoSocial.on('click', () => { onSetScene( "6C58A13D4C", itemBanoSocial, false ); });
-    itemhabitacion1.on('click', () => { onSetScene( "7ADB2FC296", itemhabitacion1, false ); });
-    itemhabitacion2.on('click', () => { onSetScene( "3B8E9C6B79", itemhabitacion2, false ); });
     itemHabitacionPrincipal.on('click', () => { onSetScene( "88761064BB", itemHabitacionPrincipal, false ); });
 
+
+     
     const onSetScene = ( idScene, element, slider = true ) => {
         window.scene.setScene({ id: idScene }); 
         const currentScene = elementMarkers.find( scene => scene.idScene == idScene );  
@@ -277,7 +263,7 @@ jQuery(document).ready(function( $ ){
     }
 
 
-        
+     
 	elementGoPasilloEntrada.hover( () => { addSpan('Entrada') }, () => { removeSpan() } );   
 	elementGoEntrada.hover( () => { addSpan('Pasillo entrada') }, () => { removeSpan() } );   
 	elementGoSala.hover( () => { addSpan('Sala') }, () => { removeSpan() } );   
@@ -309,7 +295,7 @@ jQuery(document).ready(function( $ ){
     }
 
     
-        
+     
     window.onChangeScene = ( e ) => {
         const idMarker = e.cfg.id;
         const currentMarker = dataMarkers.find( marker => marker.idMarker === idMarker );
@@ -341,11 +327,54 @@ jQuery(document).ready(function( $ ){
 
 
     
-    wallReferenceGood051.on('click', () => { isUserRegister( wallReferenceGood051, wallGood051, 'Good 051' ); });
-    wallReferenceBetter088.on('click', () => { isUserRegister( wallReferenceBetter088, wallBetter088, 'Better 088' ); });
-    wallReferenceBest077.on('click', () => { isUserRegister( wallReferenceBest077, wallBest077, 'Best 077' ); });
+    const textWallGood051 = jQuery('#wallGood051');
+    const textWallBetter088 = jQuery('#wallBetter088');
+    const textWallBest077 = jQuery('#wallBest077');
+    const contentWallGood051 = jQuery('#mainContentWallGood051');
+    const contentWallBetter088 = jQuery('#mainContentWallBetter088');
+    const contentWallBest077 = jQuery('#mainContentWallBest077');
+  
+  	const textWallM7Good051 = jQuery('#wallM7Good051');
+    const textWallM7Better088 = jQuery('#wallM7Better088');
+    const textWallM7Best077 = jQuery('#wallM7Best077');
+    const contentWallM7Good051 = jQuery('#mainContentWallM7Good051');
+    const contentWallM7Better088 = jQuery('#mainContentWallM7Better088');
+    const contentWallM7Best077 = jQuery('#mainContentWallM7Best077');
+  
+    const textWallGood001 = jQuery('#wallGood001');
+    const textWallBetter008 = jQuery('#wallBetter008');
+    const textWallBest007 = jQuery('#wallBest007');
+    const contentWallGood001 = jQuery('#mainContentWallGood001');
+    const contentWallBetter008 = jQuery('#mainContentWallBetter008');
+    const contentWallBest007 = jQuery('#mainContentWallBest007');
+  
+  	const textWallM2Good001 = jQuery('#wallM2Good001');
+    const textWallM2Better008 = jQuery('#wallM2Better008');
+    const textWallM2Best007 = jQuery('#wallM2Best007');
+    const contentWallM2Good001 = jQuery('#mainContentWallM2Good001');
+    const contentWallM2Better008 = jQuery('#mainContentWallM2Better008');
+    const contentWallM2Best007 = jQuery('#mainContentWallM2Best007');
+
+
+     
+    textWallGood051.on('click', () => { isUserRegister( textWallGood051, contentWallGood051, 'Good 051' ); });
+    textWallBetter088.on('click', () => { isUserRegister( textWallBetter088, contentWallBetter088, 'Better 088' ); });
+    textWallBest077.on('click', () => { isUserRegister( textWallBest077, contentWallBest077, 'Best 077' ); });
+  
+  	textWallM7Good051.on('click', () => { isUserRegister( textWallM7Good051, contentWallM7Good051, 'Good 051' ); });
+    textWallM7Better088.on('click', () => { isUserRegister( textWallM7Better088, contentWallM7Better088, 'Better 088' ); });
+    textWallM7Best077.on('click', () => { isUserRegister( textWallM7Best077, contentWallM7Best077, 'Best 077' ); });
+  
+  	textWallGood001.on('click', () => { isUserRegister( textWallGood001, contentWallGood001, 'Good 001' ); });
+    textWallBetter008.on('click', () => { isUserRegister( textWallBetter008, contentWallBetter008, 'Better 008' ); });
+    textWallBest007.on('click', () => { isUserRegister( textWallBest007, contentWallBest007, 'Best 007' ); });
+  
+  	textWallM2Good001.on('click', () => { isUserRegister( textWallM2Good001, contentWallM2Good001, 'Good 001' ); });
+    textWallM2Better008.on('click', () => { isUserRegister( textWallM2Better008, contentWallM2Better008, 'Better 008' ); });
+    textWallM2Best007.on('click', () => { isUserRegister( textWallM2Best007, contentWallM2Best007, 'Best 007' ); });
 
     
+     
     const isUserRegister = ( textReference, elemMuro, typeModel ) => {
         const userEmail = jQuery('#currentUserEmail').val();
         
@@ -357,20 +386,19 @@ jQuery(document).ready(function( $ ){
         
     }
 
+     
     const changeColorTextModel = ( elemText, elemMuro ) => {
-        wallReferenceGood051.css("color", "#ffffff")
-        wallReferenceBetter088.css("color", "#ffffff")
-        wallReferenceBest077.css("color", "#ffffff")
+      	elemText.parent().find('.content-references-walls').css('color', '#ffffff');
+        
         elemText.css("color", "#000000")
 
-        wallGood051.css("display", "none")
-        wallBetter088.css("display", "none")
-        wallBest077.css("display", "none")
+      	elemMuro.parent().find('.main-content-walls-references').css('display', 'none');
+        
         elemMuro.css("display", "block")
     }
 
 
-    
+     
     const registerDataMarker = ( dataMarker, url ) =>  {        
         if ( dataMarker.email ) {            
         
